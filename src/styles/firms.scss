@@ -1,0 +1,64 @@
+.firms {
+  background: #fff;
+  height: 188px;
+
+  @media screen and (max-width: 1350px) {
+    height: auto;
+  }
+
+  &__container {
+    margin: 0 30px;
+  }
+
+  &__title {
+    position: relative;
+    padding: 30px 0 10px;
+
+    font-family: Verdana, sans-serif;
+    font-size: 20px;
+    color: #222;
+
+    border-bottom: 1px solid #c4c4c4;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+
+      width: 265px;
+
+      border-bottom: 1px solid #222;
+    }
+  }
+
+  &__list {
+    display: flex;
+    max-width: 1508px;
+    padding-top: 29px;
+    margin: 0 auto;
+
+    justify-content: space-between;
+
+    @media screen and (max-width: 1350px) {
+      max-width: 570px;
+      padding: 27px 0 22px;
+
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    @media screen and (max-width: 768px) {
+      max-width: 252px;
+      margin: 0 auto;
+
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    @media screen and (max-width: 768px) {
+      margin-bottom: 36px;
+    }
+  }
+}

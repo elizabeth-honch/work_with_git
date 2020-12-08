@@ -3,11 +3,495 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Benefit</title>
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
+    <header id="main" class="header">
+      <section class="header__top">
+        <div class="header__container">
+          <div class="header__block">
+            <span class="header__region">Ваш регион:</span>
+
+            <select class="header__select">
+              <option>Днепр</option>
+              <option>Киев</option>
+              <option>Львов</option>
+            </select>
+          </div>
+
+          <ul class="header__contacts">
+            <li class="header__contact">
+              <a href="https://www.benefitcosmetics.com/en-us/all-makeup" class="header__link">
+                Шоурум
+              </a>
+            </li>
+
+            <li class="header__contact">
+              <a href="https://www.benefitcosmetics.com/en-us/all-makeup" class="header__link">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="header__brand brand">
+        <div class="brand__container">
+          <div class="brand__block">
+            <div class="brand__phones">
+              <p class="brand__phone">0-800-56-87-96</p>
+
+              <p class="brand__date">(пн-пт - 10:00-19:00 сб-вс - 11:00 - 17:00)</p>
+            </div>
+
+            <span class="brand__call">
+              <a href="tel:0-800-56-87-96" class="brand__link">
+                Заказать звонок
+              </a>
+            </span>
+          </div>
+
+          <img
+            src="./images/logo.png"
+            alt="logo"
+            class="brand__logo"
+          >
+
+          <ul class="brand__list">
+            <li class="brand__item">
+              <img
+                src="./images/search-icon.png"
+                alt="search-icon"
+                class="brand__img-search"
+              >
+
+              <p class="brand__title">Поиск</p>
+            </li>
+
+            <li class="brand__item">
+              <p class="brand__img brand__img-balance"></p>
+
+              <p class="brand__title">Сравнение</p>
+            </li>
+
+            <li class="brand__item">
+              <p class="brand__img brand__img-basket"></p>
+
+              <p class="brand__title">Корзина</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <nav class="nav">
+        <input
+          id="nav__toggle"
+          type="checkbox"
+        >
+
+        <label class="nav__btn" for="nav__toggle">
+          <span></span>
+        </label>
+
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#make" class="nav__link">Макияж</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#nail" class="nav__link">Ногти</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#hair" class="nav__link">Волосы</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#parfums" class="nav__link">Парфюмерия</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#face" class="nav__link">Лицо</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#body" class="nav__link">Тело и ванна</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#man" class="nav__link">Мужчинам</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#accessory" class="nav__link">Аксессуары</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#health" class="nav__link">Health and care</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#present" class="nav__link">Подарки</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#brand" class="nav__link">Бренды</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="main__container">
+        <div class="main__banners">
+          <img
+            src="./images/banner.png"
+            alt="banners-img"
+            class="main__img"
+          >
+
+          <img
+            src="./images/banner-mini.png"
+            alt="banners-mini"
+            class="main__mini"
+          >
+        </div>
+
+        <section class="main__product product">
+          <p class="product__title">Cамое популярное</p>
+
+          <hr class="product__line">
+
+          <ul class="product__list">
+            <li class="product__item">
+              <div class="product__block">
+                <span class="product__mark">Макияж</span>
+
+                <img
+                  src="./images/pomade.png"
+                  alt="pomade"
+                  class="product__img"
+                >
+
+                <p class="product__info">Givenchy Le Rouge*   Помада для губ</p>
+              </div>
+              <div class="product__prices">
+                <div class="product__price">
+                  <p class="product__price-old">1 100грн</p>
+
+                  <p class="product__price-red">900грн</p>
+                </div>
+
+                <button type="button" class="product__btn">В корзину</button>
+              </div>
+            </li>
+
+            <li class="product__item">
+              <div class="product__block">
+                <span class="product__mark">Тело и ванна</span>
+
+                <img
+                  src="./images/oil.png"
+                  alt="oil"
+                  class="product__img"
+                >
+
+                <p class="product__info">Натуральное масло "Манго"</p>
+              </div>
+              <div class="product__prices">
+                <p class="product__value">97грн</p>
+
+                <button type="button" class="product__btn">В корзину</button>
+              </div>
+            </li>
+
+            <li class="product__item">
+              <div class="product__block">
+                <span class="product__mark">Волосы</span>
+
+                <img
+                  src="./images/shampoo.png"
+                  alt="shampoo"
+                  class="product__img"
+                >
+
+                <p class="product__info">Аюрведический шампунь из индийских трав «Comex»</p>
+              </div>
+              <div class="product__prices">
+                <p class="product__value">62грн</p>
+
+                <button type="button" class="product__btn">В корзину</button>
+              </div>
+            </li>
+
+            <li class="product__item">
+              <div class="product__block">
+                <span class="product__mark">Ногти</span>
+
+                <img
+                  src="./images/nail.png"
+                  alt="nail"
+                  class="product__img"
+                >
+
+                <p class="product__info">Лак для ногтей</p>
+              </div>
+              <div class="product__prices">
+                <p class="product__value">132грн</p>
+
+                <button type="button" class="product__btn">В корзину</button>
+              </div>
+            </li>
+
+            <li class="product__item">
+              <div class="product__block">
+                <span class="product__mark">Лицо</span>
+
+                <img
+                  src="./images/mask.png"
+                  alt="mask"
+                  class="product__img"
+                >
+
+                <p class="product__info">Маска для лица "3 глины и морские водоросли"</p>
+              </div>
+              <div class="product__prices">
+                <p class="product__value">150грн</p>
+
+                <button type="button" class="product__btn">В корзину</button>
+              </div>
+            </li>
+
+            <li class="product__item">
+              <div class="product__block">
+                <span class="product__mark">Мужчинам</span>
+
+                <img
+                  src="./images/cologne.png"
+                  alt="cologne"
+                  class="product__img"
+                >
+
+                <p class="product__info">Geparlys Karen Low Pure Vibe</p>
+              </div>
+              <div class="product__prices">
+                <p class="product__value">266грн</p>
+
+                <button type="button" class="product__btn">В корзину</button>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="main__firms firms">
+          <div class="firms__container">
+            <p class="firms__title">Бренды нашего магазина</p>
+
+            <ul class="firms__list">
+              <li class="firms__item">
+                <a href="https://nyxcosmetic.com.ua/" class="firms__link">
+                  <img src="./images/NYX_logo.png" alt="nyx">
+                </a>
+              </li>
+
+              <li class="firms__item">
+                <a href="https://www.sephora.com/" class="firms__link">
+                  <img src="./images/Sephora-Company-Logo.png" alt="sephora">
+                </a>
+              </li>
+
+              <li class="firms__item">
+                <a href="https://www.smashbox.com/" class="firms__link">
+                  <img src="./images/smashbox.png" alt="smashbox">
+                </a>
+              </li>
+
+              <li class="firms__item">
+                <a href="https://www.chanel.com/ru/" class="firms__link">
+                  <img src="./images/chanel.png" alt="chanel">
+                </a>
+              </li>
+
+              <li class="firms__item">
+                <a href="https://makeup.com.ua/brand/69759/" class="firms__link">
+                  <img src="./images/rimmel.png" alt="rimmel">
+                </a>
+              </li>
+
+              <li class="firms__item">
+                <a href="https://makeup.com.ua/brand/1804074/" class="firms__link">
+                  <img src="./images/simple.png" alt="simple beauty">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="main__footer footer">
+      <div class="footer__container">
+        <div class="footer__blocks">
+          <div class="footer__block">
+            <p class="footer__section">
+              разделы сайта
+              <span class="footer__arrow-right"></span>
+            </p>
+            <div class="footer__lists">
+              <ul class="footer__list">
+                <div class="footer__items">
+                  <li class="footer__item">
+                    <a href="#makeup" class="footer__link">
+                      Макияж
+                    </a>
+                  </li>
+
+                  <li class="footer__item">
+                    <a href="#makeup" class="footer__link">
+                      Ногти
+                    </a>
+                  </li>
+
+                  <li class="footer__item">
+                    <a href="#makeup" class="footer__link">
+                      Волосы
+                    </a>
+                  </li>
+
+                  <li class="footer__item">
+                    <a href="#makeup" class="footer__link">
+                      Парфюмерия
+                    </a>
+                  </li>
+
+                  <li class="footer__item">
+                    <a href="#makeup" class="footer__link">
+                      Лицо
+                    </a>
+                  </li>
+
+                  <li class="footer__item">
+                    <a href="#makeup" class="footer__link">
+                      Тело и ванна
+                    </a>
+                  </li>
+
+                  <li class="footer__item">
+                    <a href="#makeup" class="footer__link">
+                      Мужчинам
+                    </a>
+                  </li>
+                </div>
+
+                <div class="footer__items">
+                  <li class="footer__item">
+                    <a href="#makeup" class="footer__link">
+                      Аксессуары
+                    </a>
+                  </li>
+
+                  <li class="footer__item">
+                    <a href="#makeup" class="footer__link">
+                      Health and care
+                    </a>
+                  </li>
+
+                  <li class="footer__item">
+                    <a href="#makeup" class="footer__link">
+                      Подарки
+                    </a>
+                  </li>
+
+                  <li class="footer__item">
+                    <a href="#makeup" class="footer__link">
+                      Бренды
+                    </a>
+                  </li>
+                </div>
+              </ul>
+
+              <ul class="footer__companies">
+                <li class="footer__company">
+                  <a href="/" class="footer__ref">
+                    О компании
+                  </a>
+                </li>
+
+                <li class="footer__company">
+                  <a href="/" class="footer__ref">
+                    Бренды
+                  </a>
+                </li>
+
+                <li class="footer__company">
+                  <a href="/" class="footer__ref">
+                    Оплата и доставка
+                  </a>
+                </li>
+
+                <li class="footer__company">
+                  <a href="/" class="footer__ref">
+                    Возврат и обмен
+                  </a>
+                </li>
+
+                <li class="footer__company">
+                  <a href="/" class="footer__ref">
+                    Шоурум
+                  </a>
+                </li>
+
+                <li class="footer__company">
+                  <a href="/" class="footer__ref">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__phones">
+              <p class="footer__phone">
+                +3 (095) 721-64-63
+              </p>
+
+              <p class="footer__date">
+                (пн-пт - 10:00-19:00
+                сб-вс - 11:00 - 17:00)
+              </p>
+
+              <button type="button" class="footer__btn">
+                Заказать звонок
+              </button>
+            </div>
+
+            <div class="footer__payment">
+              <p class="footer__choose">Мы принимаем <span class="footer__hide">любой способ оплаты</span></p>
+              <div class="footer__cards">
+                <p class="footer__visa"></p>
+
+                <p class="footer__master"></p>
+              </div>
+            </div>
+
+            <a href="#main" class="footer__arrow"></a>
+          </div>
+
+          <img
+            src="./images/logo.png"
+            alt="logo"
+            class="footer__img"
+          >
+
+          <p class="footer__text">
+            © 2013-2017 «Benefit» — интернет-магазин косметики email:
+            <span class="footer__email">zakaz@benefit.ru</span>
+          </p>
+        </div>
+      </div>
+    </footer>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>

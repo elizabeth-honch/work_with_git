@@ -1,0 +1,349 @@
+.footer {
+  padding-top: 4px;
+
+  border-top: 1px solid #222;
+  background-color: #fff;
+
+  &__container {
+    padding-bottom: 10px;
+    border-top: 2px solid #c4c4c4;
+  }
+
+  &__blocks {
+    max-width: 1700px;
+    padding-top: 30px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 1800px) {
+      margin: 0 30px;
+    }
+
+    @media screen and (max-width: 768px) {
+      display: flex;
+      max-width: 252px;
+      margin: 0 auto;
+      flex-direction: column;
+    }
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 41px;
+
+    @media screen and (max-width: 1350px) {
+      position: relative;
+      flex-direction: column;
+    }
+
+    @media screen and (max-width: 768px) {
+      order: 2;
+    }
+  }
+
+  &__section {
+    display: none;
+
+    @media screen and (max-width: 768px) {
+      display: block;
+      margin-top: 61px;
+
+      order: 2;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+
+      &::before {
+        content: "";
+        position: relative;
+        top: -31px;
+
+        display: block;
+        width: 200px;
+        height: 2px;
+
+        background-color: #c4c4c4;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        width: 200px;
+        height: 2px;
+
+        background-color: #c4c4c4;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    width: 234px;
+    height: 184px;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1350px) {
+      margin-right: 29px;
+    }
+  }
+
+  &__item {
+    padding-bottom: 10px;
+  }
+
+  &__link {
+    text-transform: uppercase;
+    color: #000;
+    font-family: "BebasNeueRegular", sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    transition: color 500ms;
+
+    &:hover {
+      cursor: pointer;
+      color: #828282;
+    }
+  }
+
+  &__companies {
+    @media screen and (max-width: 1350px) {
+      position: relative;
+      top: -5px;
+    }
+  }
+
+  &__lists {
+    display: flex;
+    width: 547px;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1350px) {
+      display: flex;
+      width: 389px;
+    }
+
+    @media screen and (max-width: 768px) {
+      display: none;
+      flex-direction: column;
+    }
+  }
+
+  &__ref {
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
+    color: #000;
+    line-height: 160%;
+    transition: color 500ms;
+
+    &:hover {
+      cursor: pointer;
+      color: #828282;
+    }
+  }
+
+  &__phones {
+    @media screen and (max-width: 1350px) {
+      position: relative;
+      left: 0;
+      top: 30px;
+
+      margin-bottom: 30px;
+    }
+
+    @media screen and (max-width: 768px) {
+      order: 4;
+      margin-bottom: 61px;
+
+      &::after {
+        content: "";
+        position: relative;
+        top: 20px;
+
+        display: block;
+        width: 200px;
+        height: 2px;
+
+        background-color: #c4c4c4;
+      }
+    }
+  }
+
+  &__phone {
+    margin-bottom: 10px;
+    font-family: Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 160%;
+  }
+
+  &__date {
+    width: 138px;
+    height: 34px;
+    margin-bottom: 35px;
+
+    font-family: Verdana, sans-serif;
+    font-size: 12px;
+    line-height: 140%;
+    color: #828282;
+
+    @media screen and (max-width: 1350px) {
+      margin-bottom: 20px;
+      margin-left: 30px;
+    }
+  }
+
+  &__btn {
+    width: 186px;
+    height: 36px;
+
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 160%;
+    color: #000;
+
+    background-color: transparent;
+    border: 1px solid #f94877;
+    transition: color 500ms;
+
+    &:hover {
+      cursor: pointer;
+      color: #fc104f;
+    }
+  }
+
+  &__payment {
+    @media screen and (max-width: 1350px) {
+      position: absolute;
+      left: 515px;
+    }
+
+    @media screen and (max-width: 768px) {
+      position: relative;
+      left: 0;
+      top: 18px;
+
+      height: 77px;
+      margin-bottom: 51px;
+
+      order: 3;
+
+      &::after {
+        content: "";
+        position: relative;
+        top: 20px;
+
+        display: block;
+        width: 200px;
+        height: 2px;
+
+        background-color: #c4c4c4;
+      }
+    }
+  }
+
+  &__choose {
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 160%;
+    color: #828282;
+
+    @media screen and (max-width: 768px) {
+      padding-left: 40px;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    width: 175px;
+    margin-top: 14px;
+
+    justify-content: space-between;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 20px;
+    }
+  }
+
+  &__visa {
+    width: 60px;
+    height: 20px;
+    margin-top: 6px;
+    background-image: url("../images/visa.png");
+  }
+
+  &__master {
+    width: 63px;
+    height: 37px;
+    background-image: url("../images/mastercard.png");
+  }
+
+  &__text {
+    font-family: Verdana, sans-serif;
+    font-size: 12px;
+    line-height: 160%;
+    color: #828282;
+
+    @media screen and (max-width: 768px) {
+      width: 252px;
+      order: 5;
+      text-align: center;
+      margin-left: -30px;
+    }
+  }
+
+  &__email {
+    color: #fc104f;
+  }
+
+  &__arrow {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    margin-top: 106px;
+
+    border: 1px solid #828282;
+    border-radius: 50%;
+    background-image: url("../images/vector.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 1350px) {
+      display: none;
+    }
+
+    &-right {
+      display: none;
+
+      @media screen and (max-width: 768px) {
+        position: relative;
+        top: -17px;
+        left: 140px;
+
+        display: block;
+        width: 16px;
+        height: 18px;
+
+        background-repeat: no-repeat;
+        background-image: url("../images/arrow-right.png");
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  &__img {
+    @media screen and (max-width: 768px) {
+      order: 1;
+    }
+  }
+
+  &__hide {
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+}

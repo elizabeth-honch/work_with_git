@@ -1,0 +1,70 @@
+.header {
+  &__top {
+    height: 40px;
+    background-color: #222;
+
+    @media screen and (max-width: 1350px) {
+      display: none;
+    }
+  }
+
+  &__container {
+    display: flex;
+    max-width: 1620px;
+    margin: 0 auto;
+    padding-top: 12px;
+
+    justify-content: space-between;
+
+    @media screen and (max-width: 1800px) {
+      margin: 0 30px;
+    }
+  }
+
+  &__region {
+    padding-right: 10px;
+
+    font-family: Verdana, sans-serif;
+    font-size: 13px;
+    color: #a0a0a0;
+  }
+
+  &__select {
+    font-family: Verdana, sans-serif;
+    font-size: 13px;
+    color: #fff;
+
+    background-color: #222;
+    border: none;
+    outline: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    width: 193px;
+
+    justify-content: space-between;
+  }
+
+  &__contact {
+    font-family: Verdana, sans-serif;
+    font-size: 13px;
+  }
+
+  &__link {
+    color: #a0a0a0;
+    transition: color 500ms;
+
+    &:hover {
+      color: #ccc;
+    }
+
+    &:active {
+      color: #c6d9a9;
+    }
+  }
+}

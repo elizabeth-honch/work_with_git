@@ -1,0 +1,196 @@
+.brand {
+  height: 100px;
+  border-bottom: 1px solid #222;
+
+  &__container {
+    display: flex;
+    max-width: 1620px;
+    margin: 0 auto;
+    padding-top: 13px;
+
+    justify-content: space-between;
+
+    @media screen and (max-width: 1800px) {
+      margin: 0 30px;
+    }
+  }
+
+  &__block {
+    display: flex;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__phones {
+    width: 148px;
+    margin-right: 125px;
+
+    @media (max-width: 1350px) {
+      margin-right: 0;
+    }
+  }
+
+  &__phone {
+    height: 38px;
+
+    font-family: Verdana, sans-serif;
+    font-size: 18px;
+    color: #222;
+
+    @media (max-width: 1350px) {
+      white-space: nowrap;
+      font-size: 14px;
+    }
+  }
+
+  &__date {
+    font-family: Verdana, sans-serif;
+    color: #828282;
+    font-size: 12px;
+
+    @media screen and (max-width: 1350px) {
+      display: none;
+    }
+  }
+
+  &__call {
+    padding-top: 22px;
+  }
+
+  &__link {
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
+    color: #222;
+
+    &:hover {
+      padding-bottom: 10px;
+      border-bottom: 1px dashed #222;
+    }
+
+    @media (max-width: 1350px) {
+      font-size: 12px;
+      white-space: nowrap;
+    }
+  }
+
+  &__logo {
+    width: 262px;
+    height: 72px;
+  }
+
+  &__list {
+    position: relative;
+
+    display: flex;
+    width: 311px;
+
+    justify-content: space-between;
+
+    @media screen and (max-width: 768px) {
+      width: 86px;
+    }
+  }
+
+  &__item {
+    width: 55px;
+
+    text-align: center;
+  }
+
+  &__item:first-of-type {
+    width: 28px;
+    padding-top: 11px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__img {
+    width: 44px;
+    height: 44px;
+    margin: 0 auto;
+
+    border-radius: 50%;
+    background-color: #f94877;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    transition: background-color 500ms;
+
+    &-balance {
+      background-image: url("../images/balance.png");
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    &-basket {
+      background-image: url("../images/basket.png");
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color: #fc104f;
+    }
+  }
+
+  &__title {
+    position: absolute;
+    bottom: 0;
+
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    font-size: 12px;
+    color: #a0a0a0;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .brand {
+    height: auto;
+    border-bottom: none;
+
+    &__container {
+      margin-bottom: 7px;
+      align-items: center;
+    }
+
+    &__nav {
+      width: 30px;
+      height: 21px;
+    }
+
+    &__block {
+      width: 120px;
+      order: 2;
+    }
+
+    &__logo {
+      width: 127px;
+      height: 35px;
+
+      margin-left: 50px;
+
+      order: 1;
+    }
+
+    &__list {
+      max-width: 150px;
+      
+      order: 3;
+    }
+
+    &__title {
+      display: none;
+    }
+
+    &__call {
+      position: relative;
+      right: 110px;
+    }
+  }
+}
